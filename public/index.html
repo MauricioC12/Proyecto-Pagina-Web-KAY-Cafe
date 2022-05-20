@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KAY CAFE</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <link rel="stylesheet" href="./css/whats.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/whats2.css">
+        <div class="nav-bottom">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <div class="popup-whatsapp fadeIn">
+                <div class="content-whatsapp -top">
+                    <button type="button" class="closePopup">
+                        <i class="material-icons icon-font-color">close</i>
+                    </button> 
+                    <p>  <img src="./img/logo de kay.png" width="40">  Hola, ¿en que podemos ayudarle? </p>       
+                </div>
+                <div class="content-whatsapp -bottom">
+                    <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                    <button class="send-msPopup" id="send-btn" type="button">
+                        <i class="material-icons icon-font-color--black">send</i>
+                    </button>
+                </div>
+            </div>
+            <button type="button" id="whats-openPopup" class="whatsapp-button">
+                <div class="float" >
+                    <i class="fa fa-whatsapp my-float"></i>
+                </div>
+            </button>
+            <div class="circle-anime"></div>
+        </div>
+        <script  src="./js/script2.js"></script>
+
+        <header>
+            <nav>
+                <a class="logo" href="/index.html">KAY CAFE</a>
+                <ul>
+                    <li><a class="active" href="#inicio">Inicio</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="/html/index2.html">Acerca de Nosotros</a></li>
+                    <li><a href="#clients">Clientes</a></li>
+                    <li><a href="#testimony">Testimonio</a></li>
+                    <li><a href="./html/contacto.html">Contacto</a></li>
+                </ul>
+                <label id="icon">
+                    <i class='bx bx-menu'></i>
+                </label>
+            </nav>
+        </header>
+
+        <section class="banner" id="inicio">    
+            <div  class="contenedor banner1">
+                <h1 class="titulo">El día y la vida son aquellos que comienzan después del café</h1>
+                <p class="copy">Ofreciendo y promoviendo la belleza y productos naturales de nuestra patria</p>
+            </div>
+        </section>
+
+        <main>
+            <section class="contenedor-productos" id="products">
+                <div class="producto">
+                    <img src="./img/cafe.png" alt="foto de cafe" class="imagen-producto">
+                    <div class="descripcion-producto">
+                        <h2 class="titulo-producto">Café Tostado y Molido 200gr</h2>
+                        <span class="precio-producto">S/. 14.00</span>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="./img/cafe.png" alt="foto de miel" class="imagen-producto">
+                    <div class="descripcion-producto">
+                        <h2 class="titulo-producto">Café Tostado y Molido 500gr</h2>
+                        <span class="precio-producto">S/. 22.00</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="banner2">
+                <div class="contenedor-banner2">
+                    <p>La vida es como una taza de café. Todo está en CÓMO LO PREPARAS, <br/>pero sobre todo en CÓMO LA TOMAS.</p>
+                </div>
+            </section>
+
+            <section class="gallery" id="clients">
+                <div class="contenedor">
+                    <h4 class="subtitulo-gallery">Clientes</h4>
+                    <div class="contenedor-gallery">
+                        <img src="./img/uno.png" alt="imagen de cliente" class="img-galeria">
+                        <img src="./img/dos.png" alt="imagen de cliente" class="img-galeria">
+                        <img src="./img/tres.png" alt="imagen de cliente" class="img-galeria">
+                        <img src="./img/cuatro.png" alt="imagen de cliente" class="img-galeria">
+                        <img src="./img/cinco.png" alt="imagen de cliente" class="img-galeria">
+                        <img src="" alt="imagen de cliente" class="img-galeria">
+                    </div>
+                </div>
+            </section>
+
+            <section class="imagen-light">
+                <img src="./img/close.svg" alt="logo de close" class="close">
+                <img src="./img/kay cafe.jpg" alt="" class="agregar-imagen">
+            </section>
+
+            <section class="testimonios" id="testimony">
+                <h5>Agrega un testimonio</h5>
+                <p>Este es el párrafo de la sección de testimonios. Animese a dejarnos su calificación de nuestro servicio y nuestros productos. Nosotros encantados de leer sus opininiones!</p>
+                <form>
+                    <div class="field">
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" required autocomplete>
+                    </div>
+                    <div class="field">
+                        <label>Apellido</label>
+                        <input type="text" name="apellidos" required autocomplete>
+                    </div>
+                    <div class="field">
+                        <label>Email</label>
+                        <input type="email" name="email" required autocomplete>
+                    </div>
+                    <div class="field">
+                        <label>Teléfono</label>
+                        <input type="number" name="telefono" required autocomplete>
+                    </div>
+                    <div class="textbox">
+                        <label>Testimonio</label>
+                        <textarea rows="30" cols="150"></textarea>
+                    </div>
+                    <div class="recomendacion">
+                        <label>Nos recomendarías con tus amigos o familiares?</label>
+                        <div><input type="radio" name="recomendacion" required autocomplete>Si</div>
+                        <div><input type="radio" name="recomendacion" required autocomplete>No</div>
+                    </div>
+                    <div class="submit">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <section class="footer" id="contact">
+                <div class="social">
+                    <a href="https://www.instagram.com/kay.natural/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Kay-Natural-106303131358701"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=51988864696&app=facebook&entry_point=page_cta&fbclid=IwAR04lV7HoOt2-8HFNNAMuDPaJw2WQGkTIBUg-0tcNRV0BjgJGYsPAzVDBKQ"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./html/index2.html">Acerca de Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#">Términos y Condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Política de Privacidad</a>
+                    </li>
+                </ul>
+                <p class="copyright"> © 2022 - KAY Cafe </p>
+            </section>
+        </footer>
+
+        <script src="./js/lightbox.js"></script>
+    </body>
+</html>

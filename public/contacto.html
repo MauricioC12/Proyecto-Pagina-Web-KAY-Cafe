@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contáctanos</title>
+        <link rel="stylesheet" href="/css/contacto.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="logo" href="/index.html">KAY CAFE</a>
+                <ul>
+                    <li><a class="active" href="/index.html">Inicio</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="/html/index2.html">Acerca de Nosotros</a></li>
+                    <li><a href="#clients">Clientes</a></li>
+                    <li><a href="#testimony">Testimonio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <label id="icon">
+                    <i class='bx bx-menu'></i>
+                </label>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container-form">
+                <div class="info-form">
+                    <h1>Contáctanos</h1>
+                    <p>Si quieres adquirir nuestro producto o tienes alguna consulta, déjanos tus datos y no dudes en escribirnos! Con gusto te responderemos lo más pronto posible. También no olvides seguirnos por nuestras redes sociales, también atendemos por ahí.</p>
+                    <a href="#"><i class="fa fa-phone"></i>988864696</a>
+                    <a href="#"><i class="fa fa-envelope"></i>kaycafe@gmail.com</a>
+                    <a href="#"><i class="fa fa-map-marked"></i>Lima-Perú</a>
+                </div>
+                <form action="#" autocomplete="off">
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
+                    <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
+                    <input type="number" name="number" placeholder="Ingresa tu teléfono" class="campo">
+                    <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+                    <input type="submit" name="enviar" value="Enviar mensaje" class="btn-enviar">
+
+                </form>
+            </div>
+        </main>
+        
+        <footer>
+            <section class="footer" id="contact">
+                <div class="social">
+                    <a href="https://www.instagram.com/kay.natural/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Kay-Natural-106303131358701"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=51988864696&app=facebook&entry_point=page_cta&fbclid=IwAR04lV7HoOt2-8HFNNAMuDPaJw2WQGkTIBUg-0tcNRV0BjgJGYsPAzVDBKQ"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <ul class="list">
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./html/index2.html">Acerca de Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#">Términos y Condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Política de Privacidad</a>
+                    </li>
+                </ul>
+                <p class="copyright"> © 2022 - KAY Cafe </p>
+            </section>
+        </footer>
+
+    </body>
+</html>
